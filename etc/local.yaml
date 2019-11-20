@@ -1,0 +1,16 @@
+info:
+  addr: :10101
+  name: singledb
+  id: 0
+log:
+  path: 
+  console: false
+  level: INFO
+cache:
+  path:
+  mmapsize: 0x80000
+  datasize: 0x2000
+  prealloc: 100
+dump:
+  invertal: 5
+  addr: 

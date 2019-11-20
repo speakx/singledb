@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package pbsingledb;
+
+service SingleDBServer {
+  rpc Save (SingleMsgChunk) returns (SingleMsgChunkReply) {}
+}
+
+message SingleMsgChunk {
+  string transid = 1;
+  bytes key = 2;
+  bytes data = 3;
+}
+
+message SingleMsgChunkReply {
+}
