@@ -7,6 +7,10 @@ echo "** org:$org"
 echo "** repository:$repository"
 echo
 
+cd ../pkg
+sh pull.sh
+cd ../$repository
+
 go_mod_replace_sp="!"
 go_mod_counter=0
 go_mod_replace=()
@@ -77,8 +81,6 @@ if [ "$pkgfolder" != "" ] ;then
 	cd ../pkg
 	init_pkg_mod
 	cd ../$repository
-else
-	cd ./src
 fi
 
 
