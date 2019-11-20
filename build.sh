@@ -18,6 +18,7 @@ targetos=$1
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 repository=${PWD##*/}
+sh ./env.sh
 # 重新造一遍 go mod
 sh ./shell/gen-proto.sh
 sh ./shell/configure.sh
