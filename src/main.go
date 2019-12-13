@@ -23,4 +23,5 @@ func main() {
 
 	srv := server.NewServer()
 	srv.Run(srvCfg.Info.Addr)
+	// genserver.TestCodecServe(srvCfg.Info.Addr, true, false, nil)
 }
